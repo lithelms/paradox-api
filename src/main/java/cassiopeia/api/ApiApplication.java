@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class ApiApplication {
-	@RequestMapping
+	@RequestMapping("/")
 	@ResponseBody
 	String ping() {
-		return "<h1>Works<h1>";
+		return "<h1>Ping-<h1>";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
