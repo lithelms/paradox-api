@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class ApiApplication {
-	@RequestMapping("/")
+	@RequestMapping("/ping")
 	@ResponseBody
 	String ping() {
 		return "<h1>Ping-<h1>";
