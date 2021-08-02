@@ -13,7 +13,7 @@ public class ApiApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	String ping() {
-		return "<h1>Ping<h1>";
+		return "<h1>Ping</h1>";
 	}
 
 	public static void main(String[] args) {
