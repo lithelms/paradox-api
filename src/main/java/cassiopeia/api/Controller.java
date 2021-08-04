@@ -25,7 +25,7 @@ public class Controller {
 
     @GetMapping("/")
     public String getRoot() {
-        return "Welcome to Paradox API: Here is a link to our README: https://github.com/lithelms/paradox-api/blob/main/README.md";
+        return "Welcome to Paradox API: \n\nHere is a link to our README: https://github.com/lithelms/paradox-api/blob/main/README.md";
     }
 
     @GetMapping("/settings")
