@@ -23,6 +23,11 @@ public class Controller {
     @Autowired
     Repo repository;
 
+    @GetMapping("/")
+    public String getRoot() {
+        return "Welcome to Paradox API: Here is a link to our README: https://github.com/lithelms/paradox-api/blob/main/README.md";
+    }
+
     @GetMapping("/settings")
     public List<Settings> getSettings() {
         return repository.findAll();
